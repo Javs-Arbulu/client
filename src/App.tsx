@@ -1,14 +1,10 @@
-import InfoCard from "./components/InfoCard";
+import PublicLayout from "./components/layout/PublicLayout";
+import Home from "./components/pages/Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold text-center mt-4">
-        Proyecto Fullstack
-      </h1>
-      <InfoCard />
-    </div>
+    <PublicLayout>
+      <Home />
+    </PublicLayout>
   );
 }
-
-export default App;
