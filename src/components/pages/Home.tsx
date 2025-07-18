@@ -1,11 +1,9 @@
-import HeroSection from "../sections/HeroSection";
-import AboutSection from "../sections/AboutSection";
+import MainSection from "../sections/main.section";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
+      <MainSection />
     </>
   );
 }
