@@ -1,4 +1,4 @@
-import MainSection from "../sections/main.section";
+import MainSection from "./main";
 
 export default function Home() {
   return (
