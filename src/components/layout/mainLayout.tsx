@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
-import Navbar from "../navbar";
-import Footer from "./Footer";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
