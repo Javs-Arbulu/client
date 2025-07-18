@@ -1,10 +1,15 @@
-import PublicLayout from "./components/layout/PublicLayout";
-import Home from "./components/pages/Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import MainLayout from "./components/layout/mainLayout";
+import AppRoutes from "./routes/AppRoutes";
 
-export default function App() {
+function App() {
   return (
-    <PublicLayout>
-      <Home />
-    </PublicLayout>
+    <Router>
+      <MainLayout>
+        <AppRoutes />
+      </MainLayout>
+    </Router>
   );
 }
+
+export default App;
