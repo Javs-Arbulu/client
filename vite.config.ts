@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     server: {
-      allowedHosts: [env.VITE_ALLOWED_HOST],
+      allowedHosts: [process.env.VITE_ALLOWED_HOST || "localhost"],
       host: true,
       port: 4200,
       strictPort: true,
