@@ -13,17 +13,17 @@ interface ImageSliderProps {
 
 const defaultSlides: Slide[] = [
   {
-    imageUrl: "../../src/assets/slide/image1.jpg",
+    imageUrl: "/images/slide/image1.jpg",
     title: "Bienvenido a Nueva Casa",
     subtitle: "Una iglesia que ama a Dios y a las personas",
   },
   {
-    imageUrl: "../../src/assets/slide/image2.jpg",
+    imageUrl: "/images/slide/image2.jpg",
     title: "Adora con nosotros",
     subtitle: "Domingos 11:00 AM - Auditorio Principal",
   },
   {
-    imageUrl: "../../src/assets/slide/image3.jpg",
+    imageUrl: "/images/slide/image3.jpg",
     title: "Únete a un Grupo",
     subtitle: "Conectados en fe y comunidad",
   },

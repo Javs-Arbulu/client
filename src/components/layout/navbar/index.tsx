@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoNegro from "../../../assets/logo-negro-navbar.png";
-import logoClaro from "../../../assets/logo-claro-navbar.png";
+import logoNegro from "/images/logo-negro-navbar.png";
+import logoClaro from "/images/logo-claro-navbar.png";
 import { NavItem } from "./sections/navItem";
 import { ROUTES, EXTERNAL_LINKS } from "../../../routes/routes.constants";
 import { DarkModeToggleCompact } from "../../ui/DarkModeToggle";
