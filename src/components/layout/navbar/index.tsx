@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logoNegro from "../../../assets/logo-negro-navbar.png";
+import logoClaro from "../../../assets/logo-claro-navbar.png";
 import { NavItem } from "./sections/navItem";
 import { ROUTES, EXTERNAL_LINKS } from "../../../routes/routes.constants";
 import { DarkModeToggleCompact } from "../../ui/DarkModeToggle";
@@ -31,7 +32,16 @@ export default function Navbar() {
           to={ROUTES.HOME}
           className="flex items-center gap-2 flex-shrink-0"
         >
-          <img src={logoNegro} alt="logo" className="h-8 sm:h-10 w-auto" />
+          <img
+            src={logoNegro}
+            alt="logo"
+            className="h-8 sm:h-10 w-auto dark:hidden"
+          />
+          <img
+            src={logoClaro}
+            alt="logo"
+            className="h-8 sm:h-10 w-auto hidden dark:block"
+          />
           <span className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
             Nueva Casa
           </span>
@@ -51,7 +61,7 @@ export default function Navbar() {
             href={EXTERNAL_LINKS.LIVE_STREAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary-600 text-white font-semibold px-3 xl:px-4 py-2 rounded-lg hover:bg-secondary-700 transition hover:scale-105 active:scale-100 text-sm xl:text-base whitespace-nowrap"
+            className="bg-slate-950 border dark:bg-slate-800 border-white text-white font-semibold px-3 xl:px-4 py-2 rounded-lg hover:bg-slate-800 transition hover:scale-105 active:scale-100 text-sm xl:text-base whitespace-nowrap"
           >
             Ver en vivo
           </a>
@@ -62,7 +72,7 @@ export default function Navbar() {
           <DarkModeToggleCompact />
           <button
             onClick={() => setOpen(!open)}
-            className="text-primary-600 dark:text-gray-300 p-1"
+            className="text-slate-950 dark:text-white p-1"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -73,7 +83,7 @@ export default function Navbar() {
           <DarkModeToggleCompact />
           <button
             onClick={() => setOpen(!open)}
-            className="text-primary-600 dark:text-gray-300 p-1 flex-shrink-0"
+            className="text-slate-600 dark:text-gray-300 p-1 flex-shrink-0"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -106,7 +116,7 @@ export default function Navbar() {
                       <Link
                         key={sub.href}
                         to={sub.href}
-                        className="block text-gray-600 dark:text-gray-300 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        className="block text-gray-600 dark:text-gray-300 py-2 hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
                         onClick={() => setOpen(false)}
                       >
                         {sub.label}
@@ -118,7 +128,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   to={link.href || "/"}
-                  className="block py-3 text-gray-900 dark:text-white font-semibold text-base border-b border-gray-200 dark:border-gray-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  className="block py-3 text-gray-900 dark:text-white font-semibold text-base border-b border-gray-200 dark:border-gray-600 hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -145,7 +155,7 @@ export default function Navbar() {
                       <Link
                         key={sub.href}
                         to={sub.href}
-                        className="block text-gray-600 dark:text-gray-300 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        className="block text-gray-600 dark:text-gray-300 py-2 hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
                         onClick={() => setOpen(false)}
                       >
                         {sub.label}
@@ -157,7 +167,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   to={link.href || "/"}
-                  className="block py-3 text-gray-900 dark:text-white font-semibold text-base border-b border-gray-200 dark:border-gray-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  className="block py-3 text-gray-900 dark:text-white font-semibold text-base border-b border-gray-200 dark:border-gray-600 hover:text-slate-600 dark:hover:text-slate-400 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -172,7 +182,7 @@ export default function Navbar() {
               href={EXTERNAL_LINKS.LIVE_STREAM}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-secondary-600 text-white py-3 rounded-lg font-semibold hover:bg-secondary-700 transition-colors"
+              className="block text-center bg-slate-950 border dark:bg-slate-800 border-white text-white py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
               onClick={() => setOpen(false)}
             >
               Ver en vivo

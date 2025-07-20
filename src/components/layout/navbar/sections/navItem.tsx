@@ -23,7 +23,7 @@ export const NavItem = ({
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
       >
-        <button className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors whitespace-nowrap">
+        <button className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold flex items-center gap-1 hover:text-slate-600 dark:hover:text-slate-400 transition-colors whitespace-nowrap">
           {label}
           <span className="text-xs">▼</span>
         </button>
@@ -34,7 +34,7 @@ export const NavItem = ({
               <Link
                 key={sub.href}
                 to={sub.href}
-                className="block px-4 py-3 text-sm lg:text-base text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-700 hover:text-primary-700 dark:hover:text-primary-400 transition-colors border-b border-gray-200 dark:border-gray-600 last:border-b-0"
+                className="block px-4 py-3 text-sm lg:text-base text-gray-700 dark:text-gray-300 hover:bg-slate-50 dark:hover:bg-gray-700 hover:text-slate-700 dark:hover:text-slate-400 transition-colors border-b border-gray-200 dark:border-gray-600 last:border-b-0"
               >
                 {sub.label}
               </Link>
@@ -51,7 +51,7 @@ export const NavItem = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold hover:text-primary-600 dark:hover:text-primary-400 transition-colors whitespace-nowrap"
+        className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold hover:text-slate-600 dark:hover:text-slate-400 transition-colors whitespace-nowrap"
       >
         {label}
       </a>
@@ -61,7 +61,7 @@ export const NavItem = ({
   return (
     <Link
       to={href || "/"}
-      className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold hover:text-primary-600 dark:hover:text-primary-400 transition-colors whitespace-nowrap"
+      className="text-gray-900 dark:text-white text-sm lg:text-base xl:text-lg font-semibold hover:text-slate-600 dark:hover:text-slate-400 transition-colors whitespace-nowrap"
     >
       {label}
     </Link>
