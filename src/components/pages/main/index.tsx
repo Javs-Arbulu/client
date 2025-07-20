@@ -1,4 +1,4 @@
-import frontPageImage from "../../../assets/forntPage.jpg";
+import frontPageImage from "/images/forntPage.jpg";
 import ADNWords from "./sections/ADNWords";
 import { ImageSlider } from "./sections/ImageSlider";
 
