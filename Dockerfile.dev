@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+COPY .env.production .env
 
 EXPOSE 4200
 CMD ["npm", "run", "dev"]
