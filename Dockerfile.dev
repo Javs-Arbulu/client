@@ -1,10 +1,13 @@
-# Etapa 1: Build de Vite
-FROM node:20-alpine as builder
+# Dockerfile.dev
+FROM node:18
+
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
+
 COPY . .
+
 COPY .env.production .env
 
 EXPOSE 4200
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
