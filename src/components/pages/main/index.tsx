@@ -1,5 +1,6 @@
 import frontPageImage from "../../../assets/forntPage.jpg";
 import ADNWords from "./sections/ADNWords";
+import { ImageSlider } from "./sections/ImageSlider";
 
 // En tu componente o página
 
@@ -13,9 +14,8 @@ const MainSection = () => {
           className="w-full h-auto object-cover"
         />
       </div> */}
-      <section className="py-3 px-3  dark:bg-white">
-        <ADNWords />
-      </section>
+      <ImageSlider />
+      <ADNWords />
     </>
   );
 };

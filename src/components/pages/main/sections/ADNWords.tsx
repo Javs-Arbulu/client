@@ -118,7 +118,7 @@ export default function ADNWords() {
   return (
     <div
       key={forceRender}
-      className="relative w-full flex items-center justify-center overflow-hidden transition-colors duration-300 bg-white dark:bg-gray-900 py-8"
+      className="relative w-full flex items-center justify-center overflow-hidden transition-colors duration-300 bg-white dark:bg-gray-800 py-8"
       style={{
         height: config.containerHeight,
       }}

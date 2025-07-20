@@ -75,8 +75,8 @@ export const DarkModeToggleCompact: React.FC<{ className?: string }> = ({
       onClick={toggleDarkMode}
       className={`
         p-1
-        text-primary-600 dark:text-neutral-300
-        hover:text-primary-700 dark:hover:text-neutral-100
+        text-slate-950 dark:text-neutral-300
+        hover:text-slate-800 dark:hover:text-neutral-100
         transition-colors duration-200
         ${className}
       `}
