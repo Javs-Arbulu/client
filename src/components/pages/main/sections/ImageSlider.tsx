@@ -35,7 +35,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
 }) => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const pauseTimeoutRef = useRef<number | null>(null);
+  const pauseTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Autoplay
   useEffect(() => {
