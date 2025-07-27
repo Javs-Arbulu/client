@@ -4,6 +4,7 @@ import { useDarkMode } from "../../hooks/useDarkMode";
 
 /**
  * Componente de botón para cambiar entre modo claro y oscuro
+ * Ahora usa los nuevos colores cyan y blue de Nueva Casa
  */
 interface DarkModeToggleProps {
   className?: string;
@@ -35,22 +36,30 @@ export const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
       onClick={toggleDarkMode}
       className={`
         ${sizeClasses[size]}
-        bg-surface-secondary hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600
-        text-primary-text dark:text-neutral-200
-        border border-light dark:border-neutral-600
+        bg-surface-secondary hover:bg-neutral-200 
+        dark:bg-nc-accent-700 dark:hover:bg-nc-accent-600
+        text-nc-accent-800 dark:text-nc-primary-300
+        border border-light dark:border-nc-accent-600
         rounded-lg transition-all duration-300 ease-in-out
         hover:scale-105 active:scale-95
-        focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+        focus:outline-none focus:ring-2 focus:ring-nc-primary-400 focus:ring-offset-2
         flex items-center gap-2
+        shadow-md hover:shadow-lg dark:shadow-nc-accent-900/20
         ${className}
       `}
       title={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
       aria-label={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
     >
       {isDark ? (
-        <Sun size={iconSizes[size]} className="text-secondary-500" />
+        <Sun
+          size={iconSizes[size]}
+          className="text-nc-primary-400 transition-colors"
+        />
       ) : (
-        <Moon size={iconSizes[size]} className="text-primary-600" />
+        <Moon
+          size={iconSizes[size]}
+          className="text-nc-secondary-500 transition-colors"
+        />
       )}
 
       {showLabel && (
@@ -64,6 +73,7 @@ export const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
 
 /**
  * Componente compacto para espacios pequeños (como navbar móvil)
+ * Actualizado con los nuevos colores
  */
 export const DarkModeToggleCompact: React.FC<{ className?: string }> = ({
   className = "",
@@ -74,16 +84,22 @@ export const DarkModeToggleCompact: React.FC<{ className?: string }> = ({
     <button
       onClick={toggleDarkMode}
       className={`
-        p-1
-        text-slate-950 dark:text-neutral-300
-        hover:text-slate-800 dark:hover:text-neutral-100
-        transition-colors duration-200
+        p-2
+        text-nc-accent-800 dark:text-nc-primary-300
+        hover:text-nc-accent-900 dark:hover:text-nc-primary-200
+        hover:bg-nc-primary-50 dark:hover:bg-nc-accent-700
+        transition-all duration-200 rounded-lg
+        focus:outline-none focus:ring-2 focus:ring-nc-primary-400 focus:ring-offset-2
         ${className}
       `}
       title={isDark ? "Modo claro" : "Modo oscuro"}
       aria-label={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
     >
-      {isDark ? <Sun size={20} /> : <Moon size={20} />}
+      {isDark ? (
+        <Sun size={20} className="text-nc-primary-400" />
+      ) : (
+        <Moon size={20} className="text-nc-secondary-500" />
+      )}
     </button>
   );
 };

@@ -1,9 +1,5 @@
-import MainSection from "./main";
+import IglesiaPage from "./IglesiaPage";
 
 export default function Home() {
-  return (
-    <>
-      <MainSection />
-    </>
-  );
+  return <IglesiaPage />;
 }
