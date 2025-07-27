@@ -1,11 +1,8 @@
 export const ROUTES = {
   HOME: "/",
   ABOUT: "/about",
-  JOVENES: "/ministerios/jovenes",
-  NINOS: "/ministerios/ninos", 
-  MATRIMONIOS: "/ministerios/matrimonios",
-  EVENTOS: "/eventos",
   CONTACTO: "/contacto",
+  COLOR_DEMO: "/color-demo", // Ruta temporal para demo de colores
 } as const;
 
 export const EXTERNAL_LINKS = {
