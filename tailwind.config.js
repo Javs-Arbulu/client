@@ -58,49 +58,59 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
 
-        // Colores personalizados Nueva Casa
-        "nc-primary": {
-          50: "#ecfeff",
-          100: "#cffafe",
-          200: "#a5f3fc",
-          300: "#67e8f9", // cyan-300 principal
-          400: "#22d3ee", // cyan-400
-          500: "#06b6d4", // cyan-500
-          600: "#0891b2", // cyan-600
-          700: "#0e7490",
-          800: "#155e75",
-          900: "#164e63",
-          950: "#083344",
-          DEFAULT: "#06b6d4",
+        // Colores personalizados Nueva Casa - Sistema simplificado
+        primary: {
+          50: "var(--primary-50)",
+          100: "var(--primary-100)",
+          200: "var(--primary-200)",
+          300: "var(--primary-300)",
+          400: "var(--primary-400)",
+          500: "var(--primary-500)",
+          600: "var(--primary-600)",
+          700: "var(--primary-700)",
+          800: "var(--primary-800)",
+          900: "var(--primary-900)",
+          DEFAULT: "var(--primary-500)",
         },
-        "nc-secondary": {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd", // blue-300
-          400: "#60a5fa", // blue-400 principal
-          500: "#3b82f6", // blue-500
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
-          950: "#172554",
-          DEFAULT: "#3b82f6",
+        secondary: {
+          50: "var(--secondary-50)",
+          100: "var(--secondary-100)",
+          200: "var(--secondary-200)",
+          300: "var(--secondary-300)",
+          400: "var(--secondary-400)",
+          500: "var(--secondary-500)",
+          600: "var(--secondary-600)",
+          700: "var(--secondary-700)",
+          800: "var(--secondary-800)",
+          900: "var(--secondary-900)",
+          DEFAULT: "var(--secondary-500)",
         },
-        "nc-accent": {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155", // slate-700
-          800: "#1e293b", // slate-800 principal
-          900: "#0f172a", // slate-900
-          950: "#020617",
-          DEFAULT: "#1e293b",
+        neutral: {
+          50: "var(--neutral-50)",
+          100: "var(--neutral-100)",
+          200: "var(--neutral-200)",
+          300: "var(--neutral-300)",
+          400: "var(--neutral-400)",
+          500: "var(--neutral-500)",
+          600: "var(--neutral-600)",
+          700: "var(--neutral-700)",
+          800: "var(--neutral-800)",
+          900: "var(--neutral-900)",
+          DEFAULT: "var(--neutral-500)",
         },
+
+        // Variables semánticas
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
+        "text-muted": "var(--text-muted)",
+        "text-inverse": "var(--text-inverse)",
+
+        "bg-primary": "var(--bg-primary)",
+        "bg-secondary": "var(--bg-secondary)",
+        "bg-accent": "var(--bg-accent)",
+
+        "border-color": "var(--border)",
+        "border-strong": "var(--border-strong)",
       },
       borderRadius: {
         lg: "var(--radius)",

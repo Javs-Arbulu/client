@@ -17,7 +17,7 @@ export const TestDarkMode = () => {
       </p>
       <button
         onClick={toggleDarkMode}
-        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700"
+        className="mt-2 px-4 py-2 bg-nc-secondary-500 text-white rounded hover:bg-nc-secondary-600 dark:bg-nc-secondary-600 dark:hover:bg-nc-secondary-700"
       >
         Cambiar a {isDark ? "Claro" : "Oscuro"}
       </button>

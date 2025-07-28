@@ -36,10 +36,10 @@ export const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
       onClick={toggleDarkMode}
       className={`
         ${sizeClasses[size]}
-        bg-surface-secondary hover:bg-neutral-200 
-        dark:bg-nc-accent-700 dark:hover:bg-nc-accent-600
-        text-nc-accent-800 dark:text-nc-primary-300
-        border border-light dark:border-nc-accent-600
+        bg-surface-secondary hover:bg-surface-tertiary 
+        dark:bg-surface-secondary dark:hover:bg-surface-tertiary
+        text-text-primary dark:text-text-primary
+        border border-border-light dark:border-border-light
         rounded-lg transition-all duration-300 ease-in-out
         hover:scale-105 active:scale-95
         focus:outline-none focus:ring-2 focus:ring-nc-primary-400 focus:ring-offset-2
@@ -85,9 +85,9 @@ export const DarkModeToggleCompact: React.FC<{ className?: string }> = ({
       onClick={toggleDarkMode}
       className={`
         p-2
-        text-nc-accent-800 dark:text-nc-primary-300
-        hover:text-nc-accent-900 dark:hover:text-nc-primary-200
-        hover:bg-nc-primary-50 dark:hover:bg-nc-accent-700
+        text-text-primary dark:text-text-primary
+        hover:text-nc-primary-500 dark:hover:text-nc-primary-400
+        hover:bg-surface-secondary dark:hover:bg-surface-secondary
         transition-all duration-200 rounded-lg
         focus:outline-none focus:ring-2 focus:ring-nc-primary-400 focus:ring-offset-2
         ${className}
