@@ -1,52 +1,55 @@
+/* Importar la paleta de colores personalizada */
+@import "./styles/colors.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Colores adaptados a la paleta Nueva Casa (cyan y azul) */
-    --background: 0 0% 100%; /* Blanco */
-    --foreground: 215 25% 6%; /* slate-900 como texto principal */
-    --card: 0 0% 100%; /* Blanco */
-    --card-foreground: 215 25% 6%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 6%;
-    --primary: 188 94% 53%; /* cyan-500 */
+    /* Colores adaptados a la paleta Nueva Casa (usando nuestras variables CSS) */
+    --background: 0 0% 100%; /* Blanco - surface-primary */
+    --foreground: 215 25% 6%; /* slate-900 - text-primary */
+    --card: 0 0% 100%; /* Blanco - surface-primary */
+    --card-foreground: 215 25% 6%; /* text-primary */
+    --popover: 0 0% 100%; /* surface-primary */
+    --popover-foreground: 215 25% 6%; /* text-primary */
+    --primary: 188 94% 53%; /* cyan-500 - primary-500 */
     --primary-foreground: 0 0% 100%; /* Blanco */
-    --secondary: 221 83% 53%; /* blue-500 */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 220 14.3% 95.9%; /* neutral-100 */
-    --muted-foreground: 215 16.3% 46.9%; /* slate-500 */
-    --accent: 215 27.9% 16.9%; /* slate-800 */
-    --accent-foreground: 0 0% 100%;
+    --secondary: 221 83% 53%; /* blue-500 - secondary-500 */
+    --secondary-foreground: 0 0% 100%; /* Blanco */
+    --muted: 220 14.3% 95.9%; /* neutral-100 - surface-secondary */
+    --muted-foreground: 215 16.3% 46.9%; /* slate-500 - text-tertiary */
+    --accent: 215 27.9% 16.9%; /* slate-800 - accent-800 */
+    --accent-foreground: 0 0% 100%; /* Blanco */
     --destructive: 0 84.2% 60.2%; /* red-500 */
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 13% 91%; /* neutral-200 */
-    --input: 220 13% 91%;
-    --ring: 188 94% 53%; /* cyan-500 */
+    --destructive-foreground: 210 40% 98%; /* Blanco */
+    --border: 220 13% 91%; /* neutral-200 - border-light */
+    --input: 220 13% 91%; /* neutral-200 */
+    --ring: 188 94% 53%; /* cyan-500 - primary-500 */
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Modo oscuro con paleta Nueva Casa */
-    --background: 215 28% 6%; /* slate-900 */
-    --foreground: 220 9% 89%; /* neutral-100 */
-    --card: 215 25% 12%; /* slate-800 */
-    --card-foreground: 220 9% 89%;
-    --popover: 215 25% 12%;
-    --popover-foreground: 220 9% 89%;
+    /* Modo oscuro con paleta Nueva Casa (usando nuestras variables CSS) */
+    --background: 215 28% 6%; /* slate-900 - surface-primary en dark */
+    --foreground: 220 9% 89%; /* neutral-100 - text-primary en dark */
+    --card: 215 25% 12%; /* slate-800 - surface-secondary en dark */
+    --card-foreground: 220 9% 89%; /* text-primary en dark */
+    --popover: 215 25% 12%; /* surface-secondary en dark */
+    --popover-foreground: 220 9% 89%; /* text-primary en dark */
     --primary: 188 86% 53%; /* cyan-400 más brillante */
     --primary-foreground: 215 28% 6%; /* slate-900 */
     --secondary: 221 83% 53%; /* blue-400 */
-    --secondary-foreground: 215 28% 6%;
-    --muted: 215 19% 20%; /* slate-700 */
-    --muted-foreground: 220 9% 67%; /* neutral-300 */
-    --accent: 215 19% 20%; /* slate-700 */
-    --accent-foreground: 220 9% 89%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 220 9% 89%;
-    --border: 215 19% 20%; /* slate-700 */
-    --input: 215 19% 20%;
+    --secondary-foreground: 215 28% 6%; /* slate-900 */
+    --muted: 215 19% 20%; /* slate-700 - surface-tertiary en dark */
+    --muted-foreground: 220 9% 67%; /* neutral-300 - text-secondary en dark */
+    --accent: 215 19% 20%; /* slate-700 - surface-tertiary en dark */
+    --accent-foreground: 220 9% 89%; /* text-primary en dark */
+    --destructive: 0 62.8% 30.6%; /* red-600 */
+    --destructive-foreground: 220 9% 89%; /* text-primary en dark */
+    --border: 215 19% 20%; /* slate-700 - border-light en dark */
+    --input: 215 19% 20%; /* slate-700 */
     --ring: 188 86% 53%; /* cyan-400 */
   }
 }
