@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Zap, Music, BookOpen, Coffee, ArrowRight } from "lucide-react";
@@ -44,12 +44,12 @@ export default function ConectaSection() {
               <p className="text-slate-600 dark:text-slate-300 font-medium mb-6">
                 Eventos, retiros y crecimiento espiritual
               </p>
-              <Button
+              <AnimatedButton
                 size="sm"
                 className="bg-rose-300 hover:bg-rose-400 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white font-semibold"
               >
                 Únete ahora
-              </Button>
+              </AnimatedButton>
             </CardContent>
           </Card>
 
@@ -68,12 +68,12 @@ export default function ConectaSection() {
               <p className="text-slate-600 dark:text-slate-300 font-medium mb-6">
                 Actividades para toda la familia
               </p>
-              <Button
+              <AnimatedButton
                 size="sm"
                 className="bg-blue-300 hover:bg-blue-400 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold"
               >
                 Participar
-              </Button>
+              </AnimatedButton>
             </CardContent>
           </Card>
 
@@ -92,12 +92,12 @@ export default function ConectaSection() {
               <p className="text-slate-600 dark:text-slate-300 font-medium mb-6">
                 Música, medios, hospitalidad y más
               </p>
-              <Button
+              <AnimatedButton
                 size="sm"
                 className="bg-emerald-300 hover:bg-emerald-400 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white font-semibold"
               >
                 Servir
-              </Button>
+              </AnimatedButton>
             </CardContent>
           </Card>
 
@@ -116,25 +116,25 @@ export default function ConectaSection() {
               <p className="text-slate-600 dark:text-slate-300 font-medium mb-6">
                 Crecimiento en comunidad íntima
               </p>
-              <Button
+              <AnimatedButton
                 size="sm"
                 className="bg-violet-300 hover:bg-violet-400 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold"
               >
                 Conectar
-              </Button>
+              </AnimatedButton>
             </CardContent>
           </Card>
         </div>
 
         <div className="text-center">
-          <Button
+          <AnimatedButton
             size="lg"
             className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white px-10 py-4 text-lg font-black shadow-xl hover:shadow-2xl transition-all hover:scale-105"
           >
             <Coffee className="w-6 h-6 mr-3" />
             Conoce todos los grupos
             <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+          </AnimatedButton>
         </div>
       </div>
     </section>

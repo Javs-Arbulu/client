@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Calendar, Phone, ArrowRight, Mail } from "lucide-react";
@@ -40,22 +40,22 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <Button
+            <AnimatedButton
               size="lg"
               className="bg-brand hover:opacity-90 text-neutral-800 px-10 py-4 text-lg font-black shadow-xl hover:shadow-2xl transition-all hover:scale-105"
             >
               <Calendar className="w-6 h-6 mr-3" />
               Planifica tu visita
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-            <Button
+            </AnimatedButton>
+            <AnimatedButton
               size="lg"
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-neutral-900 px-10 py-4 text-lg font-black bg-transparent shadow-xl hover:shadow-2xl transition-all hover:scale-105"
             >
               <Phone className="w-6 h-6 mr-3" />
               Contáctanos
-            </Button>
+            </AnimatedButton>
           </div>
 
           <div className="max-w-lg mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-lg">
@@ -68,10 +68,10 @@ export default function CTASection() {
                 placeholder="Tu email"
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/70 font-medium focus:border-primary-300"
               />
-              <Button className="bg-brand hover:opacity-90 text-neutral-800 font-bold px-6 shadow-lg">
+              <AnimatedButton className="bg-brand hover:opacity-90 text-neutral-800 font-bold px-6 shadow-lg">
                 <Mail className="w-4 h-4 mr-2" />
                 Suscribirse
-              </Button>
+              </AnimatedButton>
             </div>
           </div>
         </div>

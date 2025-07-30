@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
@@ -167,28 +167,28 @@ export const ColorSystemDemo: React.FC = () => {
               Botones
             </h3>
             <div className="space-y-4">
-              <Button className="w-full bg-gradient-to-r from-nc-primary-400 to-nc-secondary-500 hover:from-nc-primary-500 hover:to-nc-secondary-600 text-white font-bold">
+              <AnimatedButton className="w-full bg-gradient-to-r from-nc-primary-400 to-nc-secondary-500 hover:from-nc-primary-500 hover:to-nc-secondary-600 text-white font-bold">
                 <Heart className="w-4 h-4 mr-2" />
                 Botón con Gradiente
-              </Button>
+              </AnimatedButton>
 
-              <Button className="w-full bg-nc-primary-500 hover:bg-nc-primary-600 text-white font-bold">
+              <AnimatedButton className="w-full bg-nc-primary-500 hover:bg-nc-primary-600 text-white font-bold">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Botón Primario (Cyan)
-              </Button>
+              </AnimatedButton>
 
-              <Button className="w-full bg-nc-secondary-500 hover:bg-nc-secondary-600 text-white font-bold">
+              <AnimatedButton className="w-full bg-nc-secondary-500 hover:bg-nc-secondary-600 text-white font-bold">
                 <Eye className="w-4 h-4 mr-2" />
                 Botón Secundario (Azul)
-              </Button>
+              </AnimatedButton>
 
-              <Button
+              <AnimatedButton
                 variant="outline"
                 className="w-full border-nc-primary-500 text-nc-primary-500 hover:bg-nc-primary-500 hover:text-white font-bold"
               >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Botón Outline
-              </Button>
+              </AnimatedButton>
             </div>
           </Card>
 

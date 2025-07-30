@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -169,14 +169,14 @@ export default function ContactoPage() {
                     />
                   </div>
 
-                  <Button
+                  <AnimatedButton
                     type="submit"
                     size="lg"
                     className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white font-bold py-3 shadow-xl hover:shadow-2xl transition-all hover:scale-105"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Enviar mensaje
-                  </Button>
+                  </AnimatedButton>
                 </form>
               </CardContent>
             </Card>
