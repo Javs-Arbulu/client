@@ -9,8 +9,8 @@ export default function IglesiaPage() {
   return (
     <Layout>
       <HeroSection />
-      <ServiciosSection />
       <NosotrosSection />
+      <ServiciosSection />
       <ConectaSection />
       <CTASection />
     </Layout>

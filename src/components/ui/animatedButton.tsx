@@ -1,6 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import type { ReactNode } from "react";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -20,7 +21,7 @@ const buttonVariants = cva(
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-11 rounded-md px-8 text-base font-bold",
         icon: "h-10 w-10",
       },
     },
@@ -31,21 +32,35 @@ const buttonVariants = cva(
   }
 );
 
-export interface ButtonProps
+export interface AnimatedButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants> {
+  iconBefore?: ReactNode;
+  iconAfter?: ReactNode;
+}
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
+const AnimatedButton = React.forwardRef<HTMLButtonElement, AnimatedButtonProps>(
+  (
+    { className, variant, size, iconBefore, iconAfter, children, ...props },
+    ref
+  ) => {
     return (
       <button
-        className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
+        className={cn(
+          buttonVariants({ variant, size }),
+          "btn-primary shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105",
+          className
+        )}
         {...props}
-      />
+      >
+        {iconBefore && <span className="mr-2">{iconBefore}</span>}
+        {children}
+        {iconAfter && <span className="ml-2">{iconAfter}</span>}
+      </button>
     );
   }
 );
-Button.displayName = "Button";
+AnimatedButton.displayName = "AnimatedButton";
 
-export { Button };
+export { AnimatedButton };

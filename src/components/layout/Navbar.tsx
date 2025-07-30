@@ -1,16 +1,20 @@
-import { Button } from "@/components/ui/button";
-import { Heart, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "@/routes/routes.constants";
 import { DarkModeToggleCompact } from "@/components/ui/DarkModeToggle";
+import { AnimatedButton } from "../ui/animatedButton";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 navbar-style shadow-lg">
       <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         <Link to={ROUTES.HOME} className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-dark rounded-xl flex items-center justify-center shadow-lg">
-            <Heart className="w-7 h-7 text-white" />
+          <div className="w-12 h-12 border border-adaptive bg-dark rounded-xl flex items-center justify-center shadow-lg">
+            <img
+              src="/images/logo-claro-navbar.png"
+              alt="Logo"
+              className="w-8 h-8"
+            />
           </div>
           <div>
             <span className="text-2xl font-black text-brand">Nueva Casa</span>
@@ -55,10 +59,10 @@ export default function Navbar() {
 
         <div className="flex items-center space-x-3">
           <DarkModeToggleCompact />
-          <Button className="btn-primary font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+          <AnimatedButton className="btn-primary font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
             <Sparkles className="w-4 h-4 mr-2" />
             Visítanos
-          </Button>
+          </AnimatedButton>
         </div>
       </div>
     </header>
