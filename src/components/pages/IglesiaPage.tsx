@@ -10,9 +10,9 @@ export default function IglesiaPage() {
     <Layout>
       <HeroSection />
       <NosotrosSection />
-      <ServiciosSection />
+      {/* <ServiciosSection />
       <ConectaSection />
-      <CTASection />
+      <CTASection /> */}
     </Layout>
   );
 }
