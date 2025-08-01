@@ -2,13 +2,19 @@ import { Star, Play, MapPin, ArrowRight } from "lucide-react";
 import { ImageCarousel } from "../ui/imagecarousel";
 import { AnimatedButton } from "../ui/animatedButton";
 import { IconBadge } from "../ui/iconBagde";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <>
-      <section
-        id="inicio"
-        className="relative py-10 lg:py-18 section-bg overflow-hidden"
+    <section
+      id="inicio"
+      className="relative py-10 lg:py-20 section-bg overflow-hidden"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         {/* Fondo sutil */}
         <div className="absolute inset-0 hero-bg-decoration"></div>
@@ -110,7 +116,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-      </section>
-    </>
+      </motion.div>
+    </section>
   );
 }
