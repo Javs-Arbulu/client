@@ -54,7 +54,7 @@
   --text-inverse: #ffffff;
 
   /* ===== BORDES ===== */
-  --border: var(--neutral-200);
+  --border: var(--primary-300);
   --border-strong: var(--neutral-300);
 
   /* ===== GRADIENTES PREDEFINIDOS ===== */
@@ -87,7 +87,7 @@
   --text-muted: var(--neutral-400);
   --text-inverse: var(--neutral-900);
 
-  --border: var(--neutral-700);
+  --border: var(--primary-700);
   --border-strong: var(--neutral-600);
 
   /* Ajustes de variables primarias/secundarias para mejor contraste */
