@@ -1,5 +1,4 @@
 import {
-  Heart,
   Clock,
   MapPin,
   Phone,
@@ -17,35 +16,32 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
             <div className="flex items-center space-x-3 mb-8">
-              <div className="w-12 h-12 bg-gradient-primary-light rounded-xl flex items-center justify-center shadow-lg">
-                <Heart className="w-7 h-7 text-white" />
-              </div>
               <div>
                 <span className="text-2xl font-black">Nueva Casa</span>
                 <div className="text-xs text-primary-adaptive font-semibold">
-                  IGLESIA CRISTIANA
+                  IGLESIA
                 </div>
               </div>
             </div>
             <p className="text-slate-400 mb-8 font-medium leading-relaxed">
-              Una iglesia joven y vibrante comprometida con transformar vidas y
-              comunidades a través del amor de Cristo.
+              Una iglesia joven y vibrante comprometida con transformar vidas a
+              través del amor de Cristo.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/IglesiaNuevaCasa"
                 className="w-14 h-14 bg-slate-800 hover:bg-gradient-primary-to-secondary rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 group shadow-lg"
               >
                 <Facebook className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/iglesianuevacasa"
                 className="w-14 h-14 bg-slate-800 hover:bg-gradient-primary-to-secondary rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 group shadow-lg"
               >
                 <Instagram className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@iglesianuevacasa"
                 className="w-14 h-14 bg-slate-800 hover:bg-gradient-primary-to-secondary rounded-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 group shadow-lg"
               >
                 <Youtube className="w-6 h-6 text-slate-400 group-hover:text-white transition-colors duration-300" />
@@ -58,19 +54,11 @@ export default function Footer() {
             <ul className="space-y-4 text-slate-400">
               <li className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
                 <Clock className="w-4 h-4" />
-                <span className="font-medium">Domingos 9:00 AM</span>
+                <span className="font-medium">Domingos 11:30 AM</span>
               </li>
               <li className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
                 <Clock className="w-4 h-4" />
-                <span className="font-medium">Domingos 11:00 AM</span>
-              </li>
-              <li className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
-                <Clock className="w-4 h-4" />
-                <span className="font-medium">Miércoles 7:00 PM</span>
-              </li>
-              <li className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
-                <Clock className="w-4 h-4" />
-                <span className="font-medium">Viernes 7:30 PM</span>
+                <span className="font-medium">Sabados 5:30 PM</span>
               </li>
             </ul>
           </div>
@@ -120,19 +108,18 @@ export default function Footer() {
           <div>
             <h3 className="font-black mb-6 text-xl">Contacto</h3>
             <div className="space-y-4 text-slate-400">
-              <div className="flex items-start space-x-3 hover-text-primary transition-colors cursor-pointer">
+              <a
+                href="https://maps.app.goo.gl/r11c3FmRnvpTz4mr7"
+                className="flex items-start space-x-3 hover-text-primary transition-colors cursor-pointer"
+              >
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <span className="font-medium">
-                  Av. Principal 123, Ciudad, Estado 12345
+                  Juan Luis Hague 3545, S.M.P, Lima, Perú
                 </span>
-              </div>
-              <div className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
-                <Phone className="w-5 h-5" />
-                <span className="font-medium">+1 (555) 123-4567</span>
-              </div>
+              </a>
               <div className="flex items-center space-x-3 hover-text-primary transition-colors cursor-pointer">
                 <Mail className="w-5 h-5" />
-                <span className="font-medium">info@vidanueva.org</span>
+                <span className="font-medium">iglesianuevacasa@gmail.com</span>
               </div>
             </div>
           </div>
