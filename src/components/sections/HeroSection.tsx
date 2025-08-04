@@ -2,7 +2,6 @@ import { Star, Play, MapPin, ArrowRight } from "lucide-react";
 import { ImageCarousel } from "../ui/imagecarousel";
 import { AnimatedButton } from "../ui/animatedButton";
 import { IconBadge } from "../ui/iconBagde";
-import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (

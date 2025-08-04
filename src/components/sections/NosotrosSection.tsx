@@ -22,10 +22,7 @@ export default function NosotrosSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.1 }}
       >
-        <section
-          id="nosotros"
-          className="py-20 section-bg relative overflow-hidden"
-        >
+        <section id="nosotros" className="py-20 relative overflow-hidden">
           <div className="absolute top-20 right-10 w-32 h-32 bg-primary-200/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-10 w-40 h-40 bg-secondary-200/30 rounded-full blur-3xl"></div>
 
