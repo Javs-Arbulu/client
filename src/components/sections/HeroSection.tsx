@@ -5,10 +5,7 @@ import { IconBadge } from "../ui/iconBagde";
 
 export default function HeroSection() {
   return (
-    <section
-      id="inicio"
-      className="relative py-10 lg:py-20 section-bg overflow-hidden"
-    >
+    <section id="inicio" className="relative py-10 lg:py-20 overflow-hidden">
       {/* Fondo sutil */}
       <div className="absolute inset-0 hero-bg-decoration"></div>
 
