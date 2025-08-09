@@ -11,6 +11,7 @@ import { IconBadge } from "../ui/iconBagde";
 import { RotatingPhoto } from "../ui/rotatingPhoto";
 import LedDivider from "../ui/ledDivider";
 import { motion } from "framer-motion";
+import SpotlightCard from "../reactbits/SpotlightCard/SpotlightCard";
 
 export default function NosotrosSection() {
   return (
@@ -51,66 +52,73 @@ export default function NosotrosSection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <Card className="card-base group">
-                    <CardContent className="p-6 text-center">
-                      <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <BookOpenCheck className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="text-xl font-black text-primary-adaptive mb-2">
-                        Conocer a Dios
-                      </div>
-                      <div className="text-sm font-semibold text-secondary-adaptive">
-                        Relación personal a través de Jesús
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <SpotlightCard spotlightColor="var(--primary-300)">
+                    <Card className="card-base group">
+                      <CardContent className="p-6 text-center">
+                        <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                          <BookOpenCheck className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="text-xl font-black text-primary-adaptive mb-2">
+                          Conocer a Dios
+                        </div>
+                        <div className="text-sm font-semibold text-secondary-adaptive">
+                          Relación personal a través de Jesús
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </SpotlightCard>
 
-                  <Card className="card-base group">
-                    <CardContent className="p-6 text-center">
-                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <Unlock className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="text-xl font-black text-primary-adaptive mb-2">
-                        Encontrar Libertad
-                      </div>
-                      <div className="text-sm font-semibold text-secondary-adaptive">
-                        Sanando heridas, viviendo en gracia
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <SpotlightCard spotlightColor="var(--primary-300)">
+                    <Card className="card-base group">
+                      <CardContent className="p-6 text-center">
+                        <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                          <Unlock className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="text-xl font-black text-primary-adaptive mb-2">
+                          Encontrar Libertad
+                        </div>
+                        <div className="text-sm font-semibold text-secondary-adaptive">
+                          Sanando heridas, viviendo en gracia
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </SpotlightCard>
 
-                  <Card className="card-base group">
-                    <CardContent className="p-6 text-center">
-                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <Compass className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="text-xl font-black text-primary-adaptive mb-2">
-                        Descubrir Propósito
-                      </div>
-                      <div className="text-sm font-semibold text-secondary-adaptive">
-                        Conoce tu llamado y destino
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="card-base group">
-                    <CardContent className="p-6 text-center">
-                      <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                        <HeartHandshake className="w-6 h-6 text-white" />
-                      </div>
-                      <div className="text-xl font-black text-primary-adaptive mb-2">
-                        Hacer la Diferencia
-                      </div>
-                      <div className="text-sm font-semibold text-secondary-adaptive">
-                        Impactando vidas sirviendo a otros
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <SpotlightCard spotlightColor="var(--primary-300)">
+                    <Card className="card-base group">
+                      <CardContent className="p-6 text-center">
+                        <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                          <Compass className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="text-xl font-black text-primary-adaptive mb-2">
+                          Descubrir Propósito
+                        </div>
+                        <div className="text-sm font-semibold text-secondary-adaptive">
+                          Conoce tu llamado y destino
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </SpotlightCard>
+                  <SpotlightCard spotlightColor="var(--primary-300)">
+                    <Card className="card-base group">
+                      <CardContent className="p-6 text-center">
+                        <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                          <HeartHandshake className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="text-xl font-black text-primary-adaptive mb-2">
+                          Hacer la Diferencia
+                        </div>
+                        <div className="text-sm font-semibold text-secondary-adaptive">
+                          Impactando vidas sirviendo a otros
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </SpotlightCard>
                 </div>
               </div>
 
               {/* Imagen rotatoria */}
-              <div className="w-full max-w-full sm:max-w-[600px] mx-auto lg:mx-0">
+              <div className="w-full max-w-full sm:max-w-[600px] mx-auto">
                 <RotatingPhoto
                   images={[
                     {

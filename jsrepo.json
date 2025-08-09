@@ -8,9 +8,9 @@
   "configFiles": {},
   "paths": {
     "*": "./src/blocks",
-    "Animations": "./src/Animations",
-    "Backgrounds": "./src/Backgrounds",
-    "Components": "./src/Components",
-    "TextAnimations": "./src/TextAnimations"
+    "Animations": "./src/animations/reactbits",
+    "Backgrounds": "./src/backgrounds/reactbits",
+    "Components": "./src/components/reactbits",
+    "TextAnimations": "./src/textAnimations/reactbits"
   }
 }
